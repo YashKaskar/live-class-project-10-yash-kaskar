@@ -1,0 +1,301 @@
+*{  
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+        background-image: url('images/bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+
+.navbar{
+        display: flex;
+}
+
+.logo{      
+    margin-top: 3rem;
+    margin-left: 3rem; 
+    color: #F9F9F9;
+}
+
+.list{
+    margin-top:1rem;
+    margin-left: 29rem;
+        display: flex;
+        padding: 29px 0;
+        border-bottom: 2px solid #F9F9F9;
+}
+
+.list-item{
+        margin-right: 3rem;
+        display: flex;
+        font-size: 19px;
+        color: #F9F9F9;
+}
+
+.callus{  
+        margin-left: 2rem;      
+        display: flex;
+        color: #F9F9F9;
+        font-size: 19px;
+}
+
+.callus img{
+        margin-top: -0.7rem;
+                height: 49px;
+                color: #F9F9F9;
+                filter: invert();
+}
+
+.callus div{    
+        margin-top: -1rem;
+}
+
+.main-content{  
+        display: flex;
+    justify-content: space-between;
+}
+
+.content1{      
+        margin-left: 6rem;
+        color: #F9F9F9;
+}
+
+.content1 h1{
+        margin-top: 9rem;
+        font-size: 69px;
+        font-weight: 700;
+}
+
+.content1 button{
+                margin-top: 3rem;
+                margin-left: 3rem;
+                padding: 9px 39px;
+                font-size: 29px;
+                background: transparent;
+                border-radius: 39px;
+                color: #F9F9F9;
+                border: 2px solid #F9F9F9;
+                
+}
+
+.content2{
+        position: relative;
+    }
+    
+    
+    
+    
+.puzzle img{
+        height: 35px;
+        width: 35px;
+        background-color:#F9F9F9 ;
+        padding-top: 3px  ;
+        padding-bottom: 5px;
+        padding-left: 27px;
+        padding-right: 32px;
+        border-radius: 40px;
+    }
+    
+.puzzle{
+        top: 50px;
+        right: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: hsla(203, 30%, 27%, 0.571);
+        padding: 30px;
+        border-radius: 2px;
+        position: relative;
+        gap: 15px;
+        font-size: 19px;
+        color:#F9F9F9 ;
+    }
+
+.pointer1{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        height: 90px;
+        width: 1px;
+        background-color:#F9F9F9 ;
+        position: absolute;
+        top: 100%;
+        right: 25%;
+    }
+    
+.dot1{
+        width: 20px;
+        height: 20px;
+        background-color:#F9F9F9 ;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+.bulb{
+        margin-top: -9rem;
+        top: 290px;
+        right:350px;
+        display: flex;
+        flex-direction: column;
+        background-color: hsla(203, 30%, 27%, 0.571);
+        padding: 30px;
+        border-radius: 2px;
+        position: relative;
+        gap: 15px;
+        font-size: 19px;
+        color:#F9F9F9 ;
+    }
+    
+.bulb img{
+        height: 50px;
+        background-color:#F9F9F9 ;
+        width: fit-content;
+        padding: 0px 25px;
+        border-radius: 40px;
+    }
+    
+.pointer2{
+        display: flex;
+        align-items: center;
+        width: 90px;
+        height: 1px;
+        background-color:#F9F9F9 ;
+        position: absolute;
+        left: 100%;
+        top: 50%;
+    }
+    
+.dot2{
+        width: 20px;
+        height: 20px;
+        background-color:#F9F9F9 ;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+    }
+
+
+
+
+
+    /* *_____________Response_______________* */
+
+    
+
+    @media screen and (max-width:1200px) {
+
+        .logo>h1{
+            font-size: 2rem;
+        }
+        .call-us>div {
+            font-size: 18px;
+        }
+    
+        .nav-list>li {
+            font-size: 16px;
+            margin: 0 20px;
+        }
+        
+        .left>h1{
+            font-size: 3.5rem;
+        }
+        .btn{
+            font-size: 25px;
+        }
+        .card{
+            font-size: 18px;
+        }
+    }
+    
+    
+    
+    @media screen and (max-width:950px) {
+        
+        .burger{
+            display: flex;
+           
+        }
+        .nav-list{
+            width: 500px;
+            justify-content: flex-end;
+            /* position:relative; */
+        }
+        .logo>h1 {
+            font-size: 1.8rem;
+        }
+        .call-us{
+        }
+        .nav-link{
+            display: none;
+        }
+        .left>h1 {
+            font-size: 2.8rem;
+            margin-left: 0;
+        }
+        .card {
+            font-size: 15px;
+        }
+        .puzzle {
+            top: 18px;
+            right: 64px;
+        }
+        .bulb {
+            top: 301px;
+            right: 244px;
+        }
+        .btn{
+            margin-top: 45px;;
+            font-size: 18px;
+        }
+    }
+    
+
+    @media screen and (max-width:550px){
+        .logo>h1 {
+            font-size: 20px;
+        }
+        nav{
+            padding: 0 25px;
+        }
+        .nav-list{
+            padding: 25px 0;
+        }
+        .main{
+            flex-direction: column;
+        }
+        .card{
+            width: 150px;
+            font-size: 12px;
+        }
+        .puzzle{
+           
+                top: 30px;
+                right: -100px;
+        
+        }
+        .bulb{
+            top: 220px;
+            right: -15px;
+        }
+        .left{
+            margin: 0 25px;
+        }
+        .call-us>img {
+            height: 30px;
+        }
+        .call-us>div {
+            font-size: 15px;
+        }
+        .btn {
+            margin-top: 34px;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+    
+   
